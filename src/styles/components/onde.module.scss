@@ -1,0 +1,140 @@
+@import './../variables.scss';
+
+.onde {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 50px 0;
+    padding: 50px 0;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto_mapa {
+    background-color: $amarelor;
+    display: block;
+
+    .map {
+        display: none;
+    }
+}
+
+.foto_mapa:hover {
+    .map {
+        display: block;
+    }
+
+}
+
+.img {
+    transform: translate(-50px, -50px);
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+.map {
+    position: absolute;
+    transform: translate(-50px, -450px);
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+.title {
+    background-color: $vinnho;
+    width: fit-content;
+    padding: 10px 40px;
+    margin-bottom: 0;
+    transform: translate(-90px, -30px);
+
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.chamado {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title_chamado {
+    font-weight: bold;
+    font-size: 3em;
+    position: absolute;
+    transform: translateY(60px);
+    z-index: 2;
+}
+
+.bloco1,
+.bloco2 {
+    padding: 75px 400px;
+    content: "";
+}
+
+.bloco1 {
+    z-index: 1;
+    background-color: $roxor;
+    transform: translate(-150px, 50px);
+}
+
+.bloco2 {
+    background-color: $azul-unir;
+    transform: translate(150px, -60px);
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .onde {
+        margin-bottom: 150px;
+    }
+
+    .conteudo {
+        width: 80vw;
+    }
+
+    .foto_mapa {
+        width: 80%;
+    }
+
+    .img,
+    .map {
+        width: 80vw;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    .chamado {
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 1100px) {
+
+    .title_chamado {
+        font-size: 1.5em;
+        width: 90%;
+    }
+
+    .bloco1,
+    .bloco2 {
+        display: none;
+    }
+}

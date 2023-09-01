@@ -1,0 +1,64 @@
+@import './../variables.scss';
+
+.agenda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    margin: 50px 0;
+    padding: 20px 0;
+    color: white;
+}
+
+.conteudo{
+    display: flex;
+}
+
+.img{
+    height: auto;
+    width: 500px;
+}
+
+.chamado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vw;
+}
+
+.bloco{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+.title{
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: 1.5em;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img{
+        width: 80%;
+    }
+
+    .bloco{
+        width: 80%;
+    }
+}

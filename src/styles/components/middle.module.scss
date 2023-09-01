@@ -1,0 +1,43 @@
+@import './../variables.scss';
+
+.middle_banner {
+    background-color: $cinza-bem-mais-escuro;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: 20px 0;
+    color: white;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+}
+
+
+.title {
+    margin-top: 0;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 1.3em;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .conteudo{
+        flex-direction: column;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+}

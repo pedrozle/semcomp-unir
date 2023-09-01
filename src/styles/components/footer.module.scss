@@ -1,0 +1,87 @@
+@import './../variables.scss';
+
+.footer {
+    background-color: black;
+    color: white;
+    min-height: 200px;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    padding: 20px 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerdo {
+    text-align: left;
+    width: 20%;
+}
+
+.centro{
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+
+}
+
+.direito {
+    text-align: right;
+    width: 20%;
+}
+
+.titulo {
+    font-size: 1.3em;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: $roxo-titulo;
+}
+
+.subtitulo {
+    font-style: italic;
+    color: $roxo-subtitulo;
+}
+
+.links {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.links:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+    color: $azul;
+}
+
+.pessoa {
+    margin-bottom: 20px;
+
+    a{
+        display: inline;
+    }
+
+    img {
+        margin-left: 20px;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .container{
+        flex-direction: column;
+    }
+
+    .esquerdo, .centro, .direito{
+        width: 80vw;
+        text-align: left;
+    }
+
+}

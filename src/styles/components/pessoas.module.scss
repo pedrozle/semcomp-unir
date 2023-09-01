@@ -1,0 +1,130 @@
+@import './../variables.scss';
+
+.pessoas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 100px 0;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 3em;
+    transform: translateY(-100px);
+}
+
+.img {
+    height: auto;
+    width: 500px;
+}
+
+.pessoal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pessoa_container {
+    width: 50vw;
+    padding: 50px 0;
+}
+
+.pessoa_container::after {
+    content: "";
+    display: block;
+    width: 25vw;
+    position: absolute;
+}
+
+.pessoa_container::after {
+    border-bottom: 1px solid #cecece5e;
+    transform: translate(50%, 20px);
+}
+
+.pessoa_content {
+    display: flex;
+}
+
+.pessoa_img {
+    border-radius: 50px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.detalhes {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+}
+
+.nome {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.apoio_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    width: 80vw;
+    justify-items: center;
+}
+
+.apoio_content {
+    text-align: center;
+}
+
+.apoio_img {
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.apoio_link {
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.apoio_link:hover {
+    color: $azul;
+
+}
+
+.apoio_nome {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 767px) {
+    .pessoa_container {
+        width: 90vw
+    }
+
+    .pessoa_content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .apoio_container {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .detalhes {
+        margin-left: 0;
+    }
+
+}

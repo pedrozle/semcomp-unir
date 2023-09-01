@@ -1,0 +1,37 @@
+@import './variables.scss';
+
+/*-----------------------------------------------------------------*/
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.cabecalho {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 3.5em;
+    text-shadow: -3px 3px 0px $roxo-titulo;
+}
+
+@media screen and (max-width: 767px) {
+    .cabecalho{
+        width: 80vw
+    }
+    .titulo{
+        font-size: 1.9em;
+    }
+    .area_lista{
+        flex-direction: column;
+    }
+}

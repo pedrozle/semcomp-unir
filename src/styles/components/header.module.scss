@@ -1,0 +1,33 @@
+@import './../variables.scss';
+
+.header {
+    background-color: $roxo-header;
+    height: 10vh;
+}
+
+.row {
+    width: 100%;
+    align-items: center;
+}
+
+.col{
+    padding-left: 0;
+}
+
+.links{
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .header{
+        margin-bottom: 50px;
+        background-color: black;
+    }
+    .links{
+        margin-bottom: 50px;
+        background-color: black;
+        padding: 20px;
+    }
+    
+}

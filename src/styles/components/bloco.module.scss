@@ -1,0 +1,47 @@
+@import './../variables.scss';
+
+.bloco {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid $amarelor;
+    object-fit: cover;
+    height: 500px;
+    width: 350px;
+    border-radius: 30px;
+
+    div {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+}
+
+.nome {
+    font-size: 1.5em;
+}
+
+.nome,
+.descricao {
+    font-weight: bold;
+    max-width: 300px;
+    margin: 10px 50px;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 767px) {
+    .bloco{
+        width: 90%;
+    }
+
+    .nome, .descricao{
+        width: 60%;
+    }
+}

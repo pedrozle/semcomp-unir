@@ -1,0 +1,69 @@
+@import './../variables.scss';
+
+.container {
+    width: 80vw;
+    display: flex;
+    padding: 10px;
+    background-color: hsla(0, 0%, 40%, 0.356);
+    margin-bottom: 10px;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ministrante {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.palestrantes_img {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.second{
+    z-index: 0;
+    transform: translateX(-10px);
+}
+
+.color {
+    width: 5px;
+    margin-right: 10px;
+    background-color: red;
+}
+
+@media screen and (max-width: 767px) {
+    .img{
+        display: none;
+    }
+}
